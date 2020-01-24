@@ -9,7 +9,7 @@ import {HttpClient} from '@angular/common/http';
 export class ServiceService{
 
 
-  url:string = 'http://gustavomorillo.com/api/cities';
+  url:string = 'http://gustavomorillo.com:8080/api/cities';
 
 
   constructor(public httpClient:HttpClientModule,
@@ -22,7 +22,7 @@ export class ServiceService{
 
   postCity(data){
 
-    return this.http.post('http://gustavomorillo.com/api/citiesSave', data )
+    return this.http.post('http://gustavomorillo.com:8080/api/citiesSave', data )
                     
   }
 
