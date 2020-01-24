@@ -14,7 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     HttpClientModule,
     HttpClientJsonpModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
